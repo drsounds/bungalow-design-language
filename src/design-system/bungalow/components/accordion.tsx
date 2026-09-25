@@ -1,7 +1,7 @@
 import { forwardRef, type DetailsHTMLAttributes, type ReactNode } from "react";
 import { cn } from "../lib/utils";
 
-export interface AccordionProps extends DetailsHTMLAttributes<HTMLDetailsElement> {
+export interface AccordionProps extends Omit<DetailsHTMLAttributes<HTMLDetailsElement>, "title"> {
   title: ReactNode;
 }
 
