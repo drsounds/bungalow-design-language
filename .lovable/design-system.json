@@ -1,0 +1,407 @@
+{
+  "meta": {
+    "name": "Bungalow",
+    "package": "@ws-cpsyxilfhv8iyyuvjrge/84f27dd1-5367-4130-a0ca-672d4ce498b3",
+    "version": "1.0.0",
+    "framework": "react",
+    "css_framework": "css-variables",
+    "component_library": "bungalow",
+    "starter_template": "custom_design_system",
+    "theme_files": [
+      "src/design-system/bungalow/styles/theme.css"
+    ],
+    "source_type": "local",
+    "source_manifest": {
+      "#enrichment": "6149745dc32b905744d5ac3ec54a6971fd98a9f04f2ec963b20f9abc07de2894",
+      ".dsignore": "5dc76db8e8768ad1270090c0bd33946d",
+      ".gitignore": "6059213806e442947666752f3db6bfdc",
+      ".lovable/meta.yaml": "4ed5ef8f447df734fef9fba0fbb1a134",
+      ".lovable/sources.yaml": "2a6b39acab75fba97d22b719c083d7fc",
+      ".lovable/system.md": "1e16c21ee072f31cf0b8dcb1c5d09675",
+      "README.md": "d19675c449605f23c7cfa133c69b398b",
+      "bunfig.toml": "25f4c8696b22b0943db7191e0cdf7942",
+      "eslint.config.js": "07a67437fb1a45ab36d6de0145ff09de",
+      "lovable.toml": "b32568cbef680de9cbb176344986f1a3",
+      "mockupPreviewPlugin.ts": "70d01fe16b7ca25f16ff6bdb97f08b0b",
+      "package.json": "707caee8cbea8d6122afb0af9e20c7e6",
+      "public/favicon.ico": "9f504444f85a5af2eef9264b02ae40be",
+      "src/design-system/bungalow/assets/fonts/bungalow-sans-bold.ttf": "ed1d960759240b7dd45370334fe217b1",
+      "src/design-system/bungalow/assets/fonts/bungalow-sans-regular.ttf": "3dccf16228817ab146c3d4e27ecd442d",
+      "src/design-system/bungalow/components/accordion.tsx": "bf7552fa44c487242de4d0ad7b04a98d",
+      "src/design-system/bungalow/components/alert.tsx": "18142d9ad4e6bb9d63ac32085e36ac02",
+      "src/design-system/bungalow/components/badge.tsx": "5595eaa5c2154bb78460fcd3bd1877f2",
+      "src/design-system/bungalow/components/button.tsx": "8057564fd9ecac7cfa8acd4c2374267a",
+      "src/design-system/bungalow/components/card.tsx": "4c4b28312580705230b7171ed17b286c",
+      "src/design-system/bungalow/components/checkbox.tsx": "9a8a4b59aa3a3981d0c32e7fcaaa99de",
+      "src/design-system/bungalow/components/input.tsx": "5864d6da8fb6f59588249f8c52e4e0ff",
+      "src/design-system/bungalow/components/select.tsx": "3f69bf48aeb3844daa2e9f92a2670865",
+      "src/design-system/bungalow/components/toast.tsx": "7d94e5ed6d0f6618606f34b1241a0b9b",
+      "src/design-system/bungalow/index.ts": "336af8a802fedbd1850027b3b5176411",
+      "src/design-system/bungalow/lib/utils.ts": "4a925fa9f50de819a2d9cfe694ed3f5e",
+      "src/design-system/bungalow/styles/theme.css": "30a88db3dd77089993f308b8ea9ab464",
+      "src/index.ts": "84a7eecf429044fc44e220335555fec7",
+      "src/mockup-preview.d.ts": "ae9d81e2b8514e13fd59b5b6bece9a64",
+      "src/routeTree.gen.ts": "6f67a8aebc2c09c9c5ed77ffc35e30e7",
+      "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
+      "src/routes/[__component].preview.$.tsx": "e4bf310e591541d31abf0cfeeb1121a4",
+      "src/routes/[__mockup].preview.$.tsx": "5d9f42470848aa60148f20f9580e240e",
+      "src/routes/__root.tsx": "284b2ba4c4f9e72688b1fb8ace5591b7",
+      "src/routes/colors.tsx": "1945066a07bad4561bef77c1b6866804",
+      "src/routes/components.tsx": "90424edb06379c821e4289b25d935e72",
+      "src/routes/index.tsx": "39f7093edfe6fff13062c9507a231628",
+      "src/routes/typography.tsx": "25e7833490a7ef02c12e480b749e1cc5",
+      "src/showcase/colors.tsx": "51897f68dd434af7d0d372fbe0c480dc",
+      "src/showcase/components.tsx": "486be34875d077f11ac69fdc51669ec1",
+      "src/showcase/overview.tsx": "704df173d35943ddb5464a249c5db1fe",
+      "src/showcase/showcase-layout.tsx": "e13289626b428811b7294c0f45759568",
+      "src/showcase/typography.tsx": "63bb29d1c82c6e7a97582550e20925c3",
+      "src/styles.css": "8b3a8a077481f0b2054ecefdbd85e738",
+      "tsconfig.json": "994abf64c2b9f78b568879f80ed0170e",
+      "vite.config.ts": "a99d983076495f848761d0f97f17062a",
+      "wrangler.jsonc": "680b897d48e44bcc65fe437c29b38f3b"
+    },
+    "pipeline_version": 8
+  },
+  "tokens": {
+    "color": [
+      {
+        "name": "--bungalow-color-canvas",
+        "raw": "#ffffff",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-ink",
+        "raw": "#111111",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-muted",
+        "raw": "#686868",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-surface",
+        "raw": "#f2f2f2",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-surface-strong",
+        "raw": "#dedede",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-border",
+        "raw": "#c8c8c8",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-success",
+        "raw": "#14d82c",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-success-soft",
+        "raw": "#e7fae9",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-warning",
+        "raw": "#ff9100",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-warning-soft",
+        "raw": "#fff2df",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-danger",
+        "raw": "#f3132b",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-danger-soft",
+        "raw": "#ffe7e9",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-info",
+        "raw": "#0797eb",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-info-soft",
+        "raw": "#e6f5fd",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-primary",
+        "raw": "#dbbb67",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-primary-soft",
+        "raw": "#f7f0dc",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-color-primary-strong",
+        "raw": "#765d20",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-focus-ring",
+        "raw": "0 0 0 0.125rem var(--bungalow-color-canvas), 0 0 0 0.25rem var(--bungalow-color-ink)",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      }
+    ],
+    "spacing": [
+      {
+        "name": "--bungalow-space-1",
+        "raw": "0.25rem",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-space-2",
+        "raw": "0.5rem",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-space-3",
+        "raw": "0.75rem",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-space-4",
+        "raw": "1rem",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-space-5",
+        "raw": "1.5rem",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-space-6",
+        "raw": "2rem",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-space-7",
+        "raw": "3rem",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-space-8",
+        "raw": "4rem",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      }
+    ],
+    "typography": [
+      {
+        "name": "--bungalow-font-sans",
+        "raw": "\"Bungalow Sans\", Arial, sans-serif",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      }
+    ],
+    "radius": [
+      {
+        "name": "--bungalow-radius-sm",
+        "raw": "0.25rem",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      },
+      {
+        "name": "--bungalow-radius-pill",
+        "raw": "999px",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      }
+    ],
+    "shadow": [
+      {
+        "name": "--bungalow-shadow-raised",
+        "raw": "0 0.25rem 1rem rgb(17 17 17 / 0.1)",
+        "source": "src/design-system/bungalow/styles/theme.css"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Accordion",
+      "file": "src/design-system/bungalow/components/accordion.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "title",
+          "type": "any",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "Alert",
+      "file": "src/design-system/bungalow/components/alert.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "tone",
+          "type": "enum",
+          "values": [
+            "default",
+            "success",
+            "warning",
+            "danger",
+            "info",
+            "contrast",
+            "primary"
+          ],
+          "default": "default"
+        }
+      ]
+    },
+    {
+      "name": "Badge",
+      "file": "src/design-system/bungalow/components/badge.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "tone",
+          "type": "enum",
+          "values": [
+            "default",
+            "success",
+            "warning",
+            "danger",
+            "info",
+            "contrast",
+            "primary"
+          ],
+          "default": "default"
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "file": "src/design-system/bungalow/components/button.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "solid",
+            "outline",
+            "ghost"
+          ],
+          "default": "solid"
+        },
+        {
+          "name": "tone",
+          "type": "enum",
+          "values": [
+            "default",
+            "success",
+            "warning",
+            "danger",
+            "info",
+            "contrast",
+            "primary"
+          ],
+          "default": "contrast"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "file": "src/design-system/bungalow/components/card.tsx",
+      "import_path": ""
+    },
+    {
+      "name": "Checkbox",
+      "file": "src/design-system/bungalow/components/checkbox.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "Input",
+      "file": "src/design-system/bungalow/components/input.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        },
+        {
+          "name": "error",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Select",
+      "file": "src/design-system/bungalow/components/select.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Toast",
+      "file": "src/design-system/bungalow/components/toast.tsx",
+      "import_path": "",
+      "props": [
+        {
+          "name": "tone",
+          "type": "enum",
+          "values": [
+            "success",
+            "warning",
+            "danger",
+            "info"
+          ],
+          "default": "info"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "message",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
