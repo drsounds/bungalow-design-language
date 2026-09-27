@@ -14,6 +14,16 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Bungalow Icons";
+  src: url("../assets/fonts/bungalow-icons.woff2") format("woff2"),
+    url("../assets/fonts/bungalow-icons.woff") format("woff"),
+    url("../assets/fonts/bungalow-icons.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: block;
+}
+
 :root {
   --bungalow-font-sans: "Bungalow Sans", Arial, sans-serif;
 
@@ -146,3 +156,50 @@
 .bungalow-toast--warning { --toast-color: var(--bungalow-color-warning); }
 .bungalow-toast--danger { --toast-color: var(--bungalow-color-danger); }
 .bungalow-toast--info { --toast-color: var(--bungalow-color-info); }
+
+[class^="bungalow-icon-"]::before,
+[class*=" bungalow-icon-"]::before {
+  font-family: "Bungalow Icons";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bungalow-icon-banknote::before { content: "\f124"; }
+.bungalow-icon-calendar::before { content: "\f122"; }
+.bungalow-icon-calendar-alt::before { content: "\f123"; }
+.bungalow-icon-clock::before { content: "\f121"; }
+.bungalow-icon-coin::before { content: "\f120"; }
+.bungalow-icon-compass::before { content: "\f11f"; }
+.bungalow-icon-credit-card::before { content: "\f11d"; }
+.bungalow-icon-credit-card-alt::before { content: "\f11e"; }
+.bungalow-icon-date::before { content: "\f11c"; }
+.bungalow-icon-document::before { content: "\f11b"; }
+.bungalow-icon-edit::before { content: "\f11a"; }
+.bungalow-icon-folder-open::before { content: "\f119"; }
+.bungalow-icon-forward::before { content: "\f118"; }
+.bungalow-icon-home::before { content: "\f117"; }
+.bungalow-icon-jump-back-15s::before { content: "\f116"; }
+.bungalow-icon-jump-forward-15s::before { content: "\f115"; }
+.bungalow-icon-like::before { content: "\f113"; }
+.bungalow-icon-like-fill::before { content: "\f114"; }
+.bungalow-icon-minus::before { content: "\f112"; }
+.bungalow-icon-moon::before { content: "\f111"; }
+.bungalow-icon-pause::before { content: "\f110"; }
+.bungalow-icon-play::before { content: "\f10f"; }
+.bungalow-icon-plus::before { content: "\f10e"; }
+.bungalow-icon-record::before { content: "\f10d"; }
+.bungalow-icon-recycle-bin::before { content: "\f10c"; }
+.bungalow-icon-repeat::before { content: "\f10b"; }
+.bungalow-icon-rewind::before { content: "\f10a"; }
+.bungalow-icon-settings::before { content: "\f109"; }
+.bungalow-icon-skip-to-next::before { content: "\f108"; }
+.bungalow-icon-skip-to-prev::before { content: "\f107"; }
+.bungalow-icon-stop::before { content: "\f106"; }
+.bungalow-icon-three-dots-h::before { content: "\f105"; }
+.bungalow-icon-three-dots-v::before { content: "\f104"; }
+.bungalow-icon-timer::before { content: "\f103"; }
+.bungalow-icon-user::before { content: "\f102"; }
+.bungalow-icon-users::before { content: "\f101"; }
