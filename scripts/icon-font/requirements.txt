@@ -1,0 +1,4 @@
+fonttools>=4.55
+shapely>=2.0
+svgelements>=1.9
+brotli>=1.1
