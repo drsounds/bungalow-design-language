@@ -1,5 +1,8 @@
 import "./styles/theme.css";
 
+export * from "./accent-color";
+export * from "./accent-color-context";
+export * from "./components/accent-color-picker";
 export * from "./components/accordion";
 export * from "./components/alert";
 export * from "./components/badge";

@@ -3,7 +3,7 @@ import { Accordion, Alert, Badge, Button, Card, Checkbox, Input, Select, Toast }
 import { ShowcaseLayout, Specimen } from "./showcase-layout";
 
 const names = ["Accordion", "Alert", "Badge", "Button", "Card", "Checkbox", "Input", "Select", "Toast"];
-const tones = ["default", "success", "warning", "danger", "info", "contrast", "primary"] as const;
+const tones = ["default", "success", "warning", "danger", "info", "contrast", "primary", "accent"] as const;
 
 export function ComponentsPage() {
   const [query, setQuery] = useState("");

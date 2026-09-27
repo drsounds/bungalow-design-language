@@ -46,6 +46,11 @@
   --bungalow-color-primary-soft: #f7f0dc;
   --bungalow-color-primary-strong: #765d20;
 
+  /* User-customizable accent. Overridden at runtime (see AccentColorProvider)
+     with an arbitrary picked color, so its contrasting foreground can't be
+     hand-picked like the fixed tones above — contrast-color() computes it. */
+  --bungalow-color-accent: var(--bungalow-color-primary);
+
   --bungalow-space-1: 0.25rem;
   --bungalow-space-2: 0.5rem;
   --bungalow-space-3: 0.75rem;
@@ -103,6 +108,10 @@
 .bungalow-tone-info { --button-color: var(--bungalow-color-info); --button-contrast: var(--bungalow-color-canvas); }
 .bungalow-tone-contrast { --button-color: var(--bungalow-color-ink); --button-contrast: var(--bungalow-color-canvas); }
 .bungalow-tone-primary { --button-color: var(--bungalow-color-primary); --button-contrast: var(--bungalow-color-ink); }
+.bungalow-tone-accent { --button-color: var(--bungalow-color-accent); --button-contrast: var(--bungalow-color-canvas); }
+@supports (color: contrast-color(#fff)) {
+  .bungalow-tone-accent { --button-contrast: contrast-color(var(--button-color)); }
+}
 
 .bungalow-badge { align-items: center; border-radius: var(--bungalow-radius-pill); display: inline-flex; font: 700 0.6875rem/1 var(--bungalow-font-sans); min-height: 1.5rem; padding: 0 var(--bungalow-space-3); }
 .bungalow-badge--default { background: var(--bungalow-color-surface-strong); color: var(--bungalow-color-ink); }
@@ -112,6 +121,10 @@
 .bungalow-badge--info { background: var(--bungalow-color-info); color: var(--bungalow-color-canvas); }
 .bungalow-badge--contrast { background: var(--bungalow-color-ink); color: var(--bungalow-color-canvas); }
 .bungalow-badge--primary { background: var(--bungalow-color-primary); color: var(--bungalow-color-ink); }
+.bungalow-badge--accent { background: var(--bungalow-color-accent); color: var(--bungalow-color-canvas); }
+@supports (color: contrast-color(#fff)) {
+  .bungalow-badge--accent { color: contrast-color(var(--bungalow-color-accent)); }
+}
 
 .bungalow-alert { align-items: center; background: var(--alert-color); color: var(--alert-contrast); display: flex; font-size: 0.8125rem; gap: var(--bungalow-space-2); min-height: 2.25rem; padding: var(--bungalow-space-2) var(--bungalow-space-3); }
 .bungalow-alert__mark { border: 1px solid currentColor; border-radius: 50%; display: grid; font-size: 0.625rem; height: 1rem; place-items: center; width: 1rem; }
@@ -122,6 +135,10 @@
 .bungalow-alert--info { --alert-color: var(--bungalow-color-info); --alert-contrast: var(--bungalow-color-canvas); }
 .bungalow-alert--contrast { --alert-color: var(--bungalow-color-ink); --alert-contrast: var(--bungalow-color-canvas); }
 .bungalow-alert--primary { --alert-color: var(--bungalow-color-primary); --alert-contrast: var(--bungalow-color-ink); }
+.bungalow-alert--accent { --alert-color: var(--bungalow-color-accent); --alert-contrast: var(--bungalow-color-canvas); }
+@supports (color: contrast-color(#fff)) {
+  .bungalow-alert--accent { --alert-contrast: contrast-color(var(--bungalow-color-accent)); }
+}
 
 .bungalow-field { display: grid; gap: var(--bungalow-space-1); }
 .bungalow-label { font-size: 0.75rem; font-weight: 700; }
@@ -134,7 +151,7 @@
 .bungalow-input:disabled, .bungalow-select:disabled { background: var(--bungalow-color-surface); cursor: not-allowed; opacity: 0.72; }
 
 .bungalow-check { align-items: center; cursor: pointer; display: inline-flex; font-size: 0.8125rem; gap: var(--bungalow-space-2); }
-.bungalow-check input { accent-color: var(--bungalow-color-ink); height: 1rem; width: 1rem; }
+.bungalow-check input { accent-color: var(--bungalow-color-accent); height: 1rem; width: 1rem; }
 .bungalow-check input:focus-visible { outline: none; box-shadow: var(--bungalow-focus-ring); }
 .bungalow-check--disabled { cursor: not-allowed; opacity: 0.48; }
 
@@ -156,6 +173,17 @@
 .bungalow-toast--warning { --toast-color: var(--bungalow-color-warning); }
 .bungalow-toast--danger { --toast-color: var(--bungalow-color-danger); }
 .bungalow-toast--info { --toast-color: var(--bungalow-color-info); }
+
+.bungalow-accent-picker { display: grid; gap: var(--bungalow-space-2); }
+.bungalow-accent-picker__row { align-items: center; display: flex; flex-wrap: wrap; gap: var(--bungalow-space-3); }
+.bungalow-accent-picker__swatch-input { appearance: none; background: none; border: 1px solid var(--bungalow-color-border); border-radius: var(--bungalow-radius-sm); cursor: pointer; height: 2.5rem; padding: 0; width: 2.5rem; }
+.bungalow-accent-picker__swatch-input::-webkit-color-swatch-wrapper { padding: 0.125rem; }
+.bungalow-accent-picker__swatch-input::-webkit-color-swatch { border: none; border-radius: calc(var(--bungalow-radius-sm) - 0.125rem); }
+.bungalow-accent-picker__presets { display: flex; gap: var(--bungalow-space-2); }
+.bungalow-accent-picker__preset { border: 1px solid var(--bungalow-color-border); border-radius: 50%; cursor: pointer; height: 1.75rem; padding: 0; width: 1.75rem; }
+.bungalow-accent-picker__preset[aria-pressed="true"] { box-shadow: var(--bungalow-focus-ring); }
+.bungalow-accent-picker__preset:focus-visible { outline: none; box-shadow: var(--bungalow-focus-ring); }
+.bungalow-accent-picker__reset { background: none; border: none; color: var(--bungalow-color-muted); cursor: pointer; font: 700 0.75rem/1 var(--bungalow-font-sans); padding: var(--bungalow-space-2) 0; text-decoration: underline; }
 
 /* bungalow-icons:start (generated by scripts/icon-font/generate.py - do not hand-edit) */
 [class^="bungalow-icon-"]::before,

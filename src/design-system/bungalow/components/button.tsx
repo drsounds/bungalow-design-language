@@ -3,7 +3,7 @@ import { cn } from "../lib/utils";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "solid" | "outline" | "ghost";
-  tone?: "default" | "success" | "warning" | "danger" | "info" | "contrast" | "primary";
+  tone?: "default" | "success" | "warning" | "danger" | "info" | "contrast" | "primary" | "accent";
   size?: "sm" | "md" | "lg";
   loading?: boolean;
 }

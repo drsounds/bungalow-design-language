@@ -2,7 +2,7 @@ import { forwardRef, type HTMLAttributes } from "react";
 import { cn } from "../lib/utils";
 
 export interface AlertProps extends HTMLAttributes<HTMLDivElement> {
-  tone?: "default" | "success" | "warning" | "danger" | "info" | "contrast" | "primary";
+  tone?: "default" | "success" | "warning" | "danger" | "info" | "contrast" | "primary" | "accent";
 }
 
 export const Alert = forwardRef<HTMLDivElement, AlertProps>(function Alert({ className, children, tone = "default", ...props }, ref) {
