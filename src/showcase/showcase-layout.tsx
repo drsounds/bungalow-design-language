@@ -6,6 +6,7 @@ const links = [
   { to: "/colors", label: "Colors" },
   { to: "/typography", label: "Typography" },
   { to: "/components", label: "Components" },
+  { to: "/patterns", label: "Patterns" },
 ] as const;
 
 export function ShowcaseLayout({ title, eyebrow, children }: { title: string; eyebrow: string; children: ReactNode }) {

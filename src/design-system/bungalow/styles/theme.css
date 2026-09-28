@@ -157,6 +157,149 @@
 .bungalow-toast--danger { --toast-color: var(--bungalow-color-danger); }
 .bungalow-toast--info { --toast-color: var(--bungalow-color-info); }
 
+/* Create/edit modal (EntitySheet + FormActions) — the "Create or update entity" pattern.
+   Header full width, body splits into a scrollable form (left) and a fixed-dark preview (right)
+   on wide screens only, footer full width with the primary action bottom-right. See
+   .lovable/system.md, "Create/edit views" for the convention this backs. */
+.bungalow-sheet-backdrop {
+  align-items: flex-end;
+  background: color-mix(in srgb, var(--bungalow-color-ink) 45%, transparent);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: fixed;
+  z-index: 20;
+}
+
+.bungalow-sheet {
+  background: var(--bungalow-color-canvas);
+  border-top-left-radius: var(--bungalow-radius-sm);
+  border-top-right-radius: var(--bungalow-radius-sm);
+  box-shadow: var(--bungalow-shadow-raised);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  max-width: 34rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Keeps the <form> out of layout so bungalow-sheet__body/__footer stack directly under __header. */
+.bungalow-sheet__form-shell {
+  display: contents;
+}
+
+.bungalow-sheet__header {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--bungalow-color-border);
+  display: flex;
+  flex: 0 0 auto;
+  gap: var(--bungalow-space-3);
+  justify-content: space-between;
+  padding: var(--bungalow-space-5) var(--bungalow-space-5) var(--bungalow-space-4);
+}
+
+.bungalow-sheet__title { font-size: 1.25rem; font-weight: 700; margin: 0; }
+.bungalow-sheet__subtitle { color: var(--bungalow-color-muted); font-size: 0.8125rem; margin: var(--bungalow-space-1) 0 0; }
+
+.bungalow-sheet__close {
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: var(--bungalow-radius-pill);
+  color: var(--bungalow-color-muted);
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
+}
+.bungalow-sheet__close:hover { background: var(--bungalow-color-surface); color: var(--bungalow-color-ink); }
+.bungalow-sheet__close:focus-visible { outline: none; box-shadow: var(--bungalow-focus-ring); }
+
+/* Body: scrollable form area, plus (on wide screens) a preview column — see --split below. */
+.bungalow-sheet__body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.bungalow-sheet__scroll {
+  display: grid;
+  gap: var(--bungalow-space-4);
+  padding: var(--bungalow-space-5);
+}
+
+/* Footer always spans the sheet's full width, primary action bottom-right (see .bungalow-form-actions). */
+.bungalow-sheet__footer {
+  border-top: 1px solid var(--bungalow-color-border);
+  flex: 0 0 auto;
+  padding: var(--bungalow-space-4) var(--bungalow-space-5);
+}
+.bungalow-sheet__footer .bungalow-form-actions {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+@media (min-width: 48rem) {
+  .bungalow-sheet-backdrop { align-items: center; }
+  .bungalow-sheet { border-radius: var(--bungalow-radius-sm); }
+}
+
+@media (min-width: 64rem) {
+  /* The preview column is desktop-only by design (see the pattern's mobile mockup) — on
+     narrower screens .bungalow-sheet__preview simply isn't rendered (EntitySheet omits it). */
+  .bungalow-sheet--split { max-width: 60rem; }
+  .bungalow-sheet--split .bungalow-sheet__body { flex-direction: row; overflow: hidden; }
+  .bungalow-sheet--split .bungalow-sheet__scroll { flex: 1 1 50%; overflow-y: auto; }
+  .bungalow-sheet--split .bungalow-sheet__preview { flex: 1 1 50%; }
+}
+
+/* The preview pane is always dark, regardless of the app's light/dark theme: it locally
+   reassigns the standard bungalow color tokens to fixed dark values, so any component or
+   .bungalow-entity-preview markup rendered inside it (Card, Badge, Button, dt/dd, ...)
+   automatically renders correctly without special-casing. */
+.bungalow-sheet__preview {
+  --bungalow-color-canvas: #111111;
+  --bungalow-color-ink: #fafafa;
+  --bungalow-color-muted: #a3a3a3;
+  --bungalow-color-surface: #1c1c1c;
+  --bungalow-color-surface-strong: #262626;
+  --bungalow-color-border: rgba(255, 255, 255, 0.14);
+  align-items: center;
+  background: var(--bungalow-color-canvas);
+  color: var(--bungalow-color-ink);
+  display: flex;
+  padding: var(--bungalow-space-6);
+}
+
+/* Default preview content: a kind/label header, a large amount, and a key/value list. Compose
+   your own preview instead when an entity doesn't reduce to "one big number". */
+.bungalow-entity-preview { display: flex; flex-direction: column; gap: var(--bungalow-space-5); text-align: left; width: 100%; }
+.bungalow-entity-preview__kind { color: var(--bungalow-color-muted); font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.bungalow-entity-preview__label { font-size: 1.375rem; font-weight: 700; overflow-wrap: anywhere; }
+.bungalow-entity-preview__amount { font-size: 2rem; font-weight: 700; }
+.bungalow-entity-preview__meta { display: grid; gap: var(--bungalow-space-3); margin: 0; }
+.bungalow-entity-preview__meta div { display: flex; justify-content: space-between; gap: var(--bungalow-space-3); }
+.bungalow-entity-preview__meta dt { color: var(--bungalow-color-muted); font-size: 0.8125rem; }
+.bungalow-entity-preview__meta dd { font-size: 0.8125rem; font-weight: 700; margin: 0; }
+
+.bungalow-form-actions {
+  align-items: center;
+  border-top: 1px solid var(--bungalow-color-border);
+  display: flex;
+  gap: var(--bungalow-space-3);
+  justify-content: space-between;
+  margin-top: var(--bungalow-space-5);
+  padding-top: var(--bungalow-space-4);
+}
+.bungalow-form-actions__secondary { display: flex; gap: var(--bungalow-space-3); }
+
 /* bungalow-icons:start (generated by scripts/icon-font/generate.py - do not hand-edit) */
 [class^="bungalow-icon-"]::before,
 [class*=" bungalow-icon-"]::before {

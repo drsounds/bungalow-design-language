@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TypographyRouteImport } from './routes/typography'
+import { Route as PatternsRouteImport } from './routes/patterns'
 import { Route as ComponentsRouteImport } from './routes/components'
 import { Route as ColorsRouteImport } from './routes/colors'
 import { Route as IndexRouteImport } from './routes/index'
@@ -19,6 +20,11 @@ import { Route as Char91__componentChar93PreviewSplatRouteImport } from './route
 const TypographyRoute = TypographyRouteImport.update({
   id: '/typography',
   path: '/typography',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PatternsRoute = PatternsRouteImport.update({
+  id: '/patterns',
+  path: '/patterns',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ComponentsRoute = ComponentsRouteImport.update({
@@ -53,6 +59,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/colors': typeof ColorsRoute
   '/components': typeof ComponentsRoute
+  '/patterns': typeof PatternsRoute
   '/typography': typeof TypographyRoute
   '/__component/preview/$': typeof Char91__componentChar93PreviewSplatRoute
   '/__mockup/preview/$': typeof Char91__mockupChar93PreviewSplatRoute
@@ -61,6 +68,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/colors': typeof ColorsRoute
   '/components': typeof ComponentsRoute
+  '/patterns': typeof PatternsRoute
   '/typography': typeof TypographyRoute
   '/__component/preview/$': typeof Char91__componentChar93PreviewSplatRoute
   '/__mockup/preview/$': typeof Char91__mockupChar93PreviewSplatRoute
@@ -70,6 +78,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/colors': typeof ColorsRoute
   '/components': typeof ComponentsRoute
+  '/patterns': typeof PatternsRoute
   '/typography': typeof TypographyRoute
   '/__component/preview/$': typeof Char91__componentChar93PreviewSplatRoute
   '/__mockup/preview/$': typeof Char91__mockupChar93PreviewSplatRoute
@@ -80,6 +89,7 @@ export interface FileRouteTypes {
     | '/'
     | '/colors'
     | '/components'
+    | '/patterns'
     | '/typography'
     | '/__component/preview/$'
     | '/__mockup/preview/$'
@@ -88,6 +98,7 @@ export interface FileRouteTypes {
     | '/'
     | '/colors'
     | '/components'
+    | '/patterns'
     | '/typography'
     | '/__component/preview/$'
     | '/__mockup/preview/$'
@@ -96,6 +107,7 @@ export interface FileRouteTypes {
     | '/'
     | '/colors'
     | '/components'
+    | '/patterns'
     | '/typography'
     | '/__component/preview/$'
     | '/__mockup/preview/$'
@@ -105,6 +117,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ColorsRoute: typeof ColorsRoute
   ComponentsRoute: typeof ComponentsRoute
+  PatternsRoute: typeof PatternsRoute
   TypographyRoute: typeof TypographyRoute
   Char91__componentChar93PreviewSplatRoute: typeof Char91__componentChar93PreviewSplatRoute
   Char91__mockupChar93PreviewSplatRoute: typeof Char91__mockupChar93PreviewSplatRoute
@@ -117,6 +130,13 @@ declare module '@tanstack/react-router' {
       path: '/typography'
       fullPath: '/typography'
       preLoaderRoute: typeof TypographyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/patterns': {
+      id: '/patterns'
+      path: '/patterns'
+      fullPath: '/patterns'
+      preLoaderRoute: typeof PatternsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/components': {
@@ -161,6 +181,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ColorsRoute: ColorsRoute,
   ComponentsRoute: ComponentsRoute,
+  PatternsRoute: PatternsRoute,
   TypographyRoute: TypographyRoute,
   Char91__componentChar93PreviewSplatRoute:
     Char91__componentChar93PreviewSplatRoute,

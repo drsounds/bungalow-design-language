@@ -6,6 +6,8 @@ export * from "./components/badge";
 export * from "./components/button";
 export * from "./components/card";
 export * from "./components/checkbox";
+export * from "./components/entity-sheet";
+export * from "./components/form-actions";
 export * from "./components/icon";
 export * from "./components/input";
 export * from "./components/select";
