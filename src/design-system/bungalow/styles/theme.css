@@ -252,18 +252,18 @@
 }
 
 @media (min-width: 64rem) {
-  /* The preview column is desktop-only by design (see the pattern's mobile mockup) — on
-     narrower screens .bungalow-sheet__preview simply isn't rendered (EntitySheet omits it). */
   .bungalow-sheet--split { max-width: 60rem; }
   .bungalow-sheet--split .bungalow-sheet__body { flex-direction: row; overflow: hidden; }
   .bungalow-sheet--split .bungalow-sheet__scroll { flex: 1 1 50%; overflow-y: auto; }
-  .bungalow-sheet--split .bungalow-sheet__preview { flex: 1 1 50%; }
+  .bungalow-sheet--split .bungalow-sheet__preview { display: flex; flex: 1 1 50%; }
 }
 
 /* The preview pane is always dark, regardless of the app's light/dark theme: it locally
    reassigns the standard bungalow color tokens to fixed dark values, so any component or
    .bungalow-entity-preview markup rendered inside it (Card, Badge, Button, dt/dd, ...)
-   automatically renders correctly without special-casing. */
+   automatically renders correctly without special-casing. Desktop-only by design (matches the
+   pattern's mobile wireframe): hidden below the split breakpoint rather than stacked under the
+   form, so `display: flex` only applies inside the media query above. */
 .bungalow-sheet__preview {
   --bungalow-color-canvas: #111111;
   --bungalow-color-ink: #fafafa;
@@ -274,7 +274,7 @@
   align-items: center;
   background: var(--bungalow-color-canvas);
   color: var(--bungalow-color-ink);
-  display: flex;
+  display: none;
   padding: var(--bungalow-space-6);
 }
 
