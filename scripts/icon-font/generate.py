@@ -12,6 +12,7 @@ Usage (from the repo root):
 See README.md in this folder for how to draw a new icon so this script
 picks it up correctly.
 """
+import json
 import math
 import re
 import sys
@@ -459,7 +460,17 @@ def build_font(icons):
     fb.setupGlyf({".notdef": notdef_pen.glyph(), **glyphs})
     fb.setupHorizontalMetrics({".notdef": (0, 0), **metrics})
     fb.setupHorizontalHeader(ascent=UPEM - 100, descent=-100)
-    fb.setupNameTable({"familyName": FONT_FAMILY, "styleName": "Regular"})
+    fb.setupNameTable(
+        {
+            "familyName": FONT_FAMILY,
+            "styleName": "Regular",
+            # Full and PostScript names too: Java's Font.createFont (the
+            # bungalow desktop app) refuses a font without them.
+            "fullName": FONT_FAMILY,
+            "psName": FONT_FAMILY.replace(" ", "") + "-Regular",
+            "uniqueFontIdentifier": FONT_FAMILY.replace(" ", "") + "-Regular",
+        }
+    )
     fb.setupOS2(sTypoAscender=UPEM - 100, sTypoDescender=-100, usWinAscent=UPEM, usWinDescent=100)
     fb.setupPost()
 
@@ -501,6 +512,14 @@ def write_css(manifest):
     pattern = re.compile(re.escape(CSS_START) + r".*?" + re.escape(CSS_END), re.DOTALL)
     css = pattern.sub(lambda _match: block, css)
     THEME_CSS_PATH.write_text(css)
+
+
+def write_manifest(manifest):
+    """Name -> codepoint map next to the font, for consumers that can't read
+    the CSS (native apps drawing glyphs straight from the .ttf)."""
+    ordered = sorted(manifest, key=lambda m: m["slug"])
+    data = {m["slug"]: m["codepoint"] for m in ordered}
+    (FONT_OUT_DIR / "bungalow-icons.json").write_text(json.dumps(data, indent=2) + "\n")
 
 
 def write_tsx(manifest):
@@ -546,6 +565,7 @@ def main():
 
     write_css(manifest)
     write_tsx(manifest)
+    write_manifest(manifest)
     print(f"Updated {THEME_CSS_PATH.relative_to(REPO_ROOT)} and {ICON_TSX_PATH.relative_to(REPO_ROOT)}.")
 
 
