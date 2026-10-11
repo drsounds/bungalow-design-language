@@ -12,6 +12,7 @@ Usage (from the repo root):
 See README.md in this folder for how to draw a new icon so this script
 picks it up correctly.
 """
+import json
 import math
 import re
 import sys
@@ -503,6 +504,14 @@ def write_css(manifest):
     THEME_CSS_PATH.write_text(css)
 
 
+def write_manifest(manifest):
+    """Name -> codepoint map next to the font, for consumers that can't read
+    the CSS (native apps drawing glyphs straight from the .ttf)."""
+    ordered = sorted(manifest, key=lambda m: m["slug"])
+    data = {m["slug"]: m["codepoint"] for m in ordered}
+    (FONT_OUT_DIR / "bungalow-icons.json").write_text(json.dumps(data, indent=2) + "\n")
+
+
 def write_tsx(manifest):
     tsx = ICON_TSX_PATH.read_text()
     if TSX_START not in tsx or TSX_END not in tsx:
@@ -546,6 +555,7 @@ def main():
 
     write_css(manifest)
     write_tsx(manifest)
+    write_manifest(manifest)
     print(f"Updated {THEME_CSS_PATH.relative_to(REPO_ROOT)} and {ICON_TSX_PATH.relative_to(REPO_ROOT)}.")
 
 

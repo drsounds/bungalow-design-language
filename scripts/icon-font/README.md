@@ -1,6 +1,7 @@
 # Bungalow Icons font generator
 
-Regenerates `assets/fonts/bungalow-icons.{ttf,woff,woff2}`, the
+Regenerates `assets/fonts/bungalow-icons.{ttf,woff,woff2}` (plus
+`bungalow-icons.json`, a name -> codepoint map for native consumers), the
 `.bungalow-icon-*` CSS classes in `styles/theme.css`, and the `IconName`
 union in `components/icon.tsx` — all straight from
 `src/design-system/bungalow/icons.svg`.

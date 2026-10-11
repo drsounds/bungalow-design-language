@@ -487,4 +487,399 @@
         </g>
         <text x="41.601px" y="122.07px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:20.05px;">Three dots v</text>
     </g>
+    <!-- Icons added for app and feature navigation (row 3 onwards). -->
+    <g id="icon-magnifying-glass" transform="translate(20,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <circle cx="42" cy="42" r="26" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M61,61L84,84" style="fill:none;stroke:black;stroke-width:13px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Magnifying glass</text>
+    </g>
+    <g id="icon-brush" transform="translate(152,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M86,14L56,50" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M52,46C40,42 26,50 26,64C26,74 22,80 14,86C34,90 52,84 58,70C60,62 58,54 52,46Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Brush</text>
+    </g>
+    <g id="icon-history" transform="translate(284,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M22,50A30,30 0 1 1 31,71" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M12,40L22,52L32,40" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M52,32L52,51L65,59" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">History</text>
+    </g>
+    <g id="icon-bolt" transform="translate(416,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M58,10L24,56H48L42,90L76,42H52Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Bolt</text>
+    </g>
+    <g id="icon-chat" transform="translate(548,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M24,16H76Q86,16 86,26V58Q86,68 76,68H48L28,86V68H24Q14,68 14,58V26Q14,16 24,16Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M32,34H68" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M32,50H56" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Chat</text>
+    </g>
+    <g id="icon-broadcast" transform="translate(680,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <circle cx="50" cy="54" r="8" style="fill:black;stroke:none;"/>
+            <path d="M34.5,38.5A22,22 0 0 0 34.5,69.5" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M65.5,38.5A22,22 0 0 1 65.5,69.5" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M23,27A38,38 0 0 0 23,81" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M77,27A38,38 0 0 1 77,81" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Broadcast</text>
+    </g>
+    <g id="icon-building" transform="translate(812,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M22,86V18Q22,12 28,12H72Q78,12 78,18V86Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M37,30H44" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M56,30H63" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M37,46H44" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M56,46H63" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M44,86V68H56V86" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Building</text>
+    </g>
+    <g id="icon-truck" transform="translate(944,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M10,66V30Q10,24 16,24H58V66Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M58,38H74L88,54V66H58" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="28" cy="74" r="9" style="fill:black;stroke:none;"/>
+            <circle cx="72" cy="74" r="9" style="fill:black;stroke:none;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Truck</text>
+    </g>
+    <g id="icon-tv" transform="translate(1076,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M20,30H80Q88,30 88,38V72Q88,80 80,80H20Q12,80 12,72V38Q12,30 20,30Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M34,12L50,30L66,12" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M36,90H64" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">TV</text>
+    </g>
+    <g id="icon-book" transform="translate(1208,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M24,80V20Q24,12 32,12H78V74H32Q24,74 24,82Q24,88 32,88H78" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M40,30H62" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Book</text>
+    </g>
+    <g id="icon-book-open" transform="translate(1340,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M50,28C40,20 26,18 12,22V80C26,76 40,78 50,86C60,78 74,76 88,80V22C74,18 60,20 50,28Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M50,28V84" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Book open</text>
+    </g>
+    <g id="icon-disc" transform="translate(1472,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <circle cx="50" cy="50" r="38" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="50" cy="50" r="9" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M28,50A22,22 0 0 1 50,28" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Disc</text>
+    </g>
+    <g id="icon-microphone" transform="translate(1604,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M50,8H50Q64,8 64,22V42Q64,56 50,56H50Q36,56 36,42V22Q36,8 50,8Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M22,42C22,60 34,70 50,70C66,70 78,60 78,42" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M50,70V86" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M36,88H64" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Microphone</text>
+    </g>
+    <g id="icon-video" transform="translate(1736,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M18,26H58Q66,26 66,34V66Q66,74 58,74H18Q10,74 10,66V34Q10,26 18,26Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M66,44L88,30V70L66,56Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Video</text>
+    </g>
+    <g id="icon-warning" transform="translate(1868,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M50,12L90,84H10Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M50,38V56" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="50" cy="70" r="5.5" style="fill:black;stroke:none;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Warning</text>
+    </g>
+    <g id="icon-database" transform="translate(2000,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <ellipse cx="50" cy="22" rx="34" ry="10" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M16,22V78A34,10 0 0 0 84,78V22" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M16,50A34,10 0 0 0 84,50" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Database</text>
+    </g>
+    <g id="icon-receipt" transform="translate(2132,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M22,10H78V88L69,82L59.5,88L50,82L40.5,88L31,82L22,88Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M36,30H64" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M36,46H64" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M36,62H52" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Receipt</text>
+    </g>
+    <g id="icon-tag" transform="translate(2264,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M12,20V46L54,88L88,54L46,12H20Q12,12 12,20Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="32" cy="32" r="6" style="fill:none;stroke:black;stroke-width:7.2px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Tag</text>
+    </g>
+    <g id="icon-gift" transform="translate(2396,300)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M16,44V82Q16,88 22,88H78Q84,88 84,82V44" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M14,28H86Q90,28 90,32V40Q90,44 86,44H14Q10,44 10,40V32Q10,28 14,28Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M50,28V88" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M50,28C42,12 24,12 26,22C28,30 50,28 50,28C50,28 72,30 74,22C76,12 58,12 50,28Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Gift</text>
+    </g>
+    <g id="icon-chart" transform="translate(20,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M12,10V88H90" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M34,72V54" style="fill:none;stroke:black;stroke-width:13px;"/>
+            <path d="M54,72V28" style="fill:none;stroke:black;stroke-width:13px;"/>
+            <path d="M74,72V42" style="fill:none;stroke:black;stroke-width:13px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Chart</text>
+    </g>
+    <g id="icon-globe" transform="translate(152,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <circle cx="50" cy="50" r="38" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <ellipse cx="50" cy="50" rx="16" ry="38" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M12,50H88" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Globe</text>
+    </g>
+    <g id="icon-flag" transform="translate(284,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M22,90V12" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M22,16C34,8 46,20 58,16C66,13 74,10 82,14V52C74,48 66,51 58,54C46,58 34,46 22,54" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Flag</text>
+    </g>
+    <g id="icon-planet" transform="translate(416,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <circle cx="50" cy="50" r="26" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M27,42C10,52 6,64 14,68C24,73 52,64 70,52C88,40 96,28 84,26C80,25 76,26 73,28" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Planet</text>
+    </g>
+    <g id="icon-star" transform="translate(548,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M50.0,12.0L60.6,39.4L89.9,41.0L67.1,59.6L74.7,88.0L50.0,72.0L25.3,88.0L32.9,59.6L10.1,41.0L39.4,39.4Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Star</text>
+    </g>
+    <g id="icon-cube" transform="translate(680,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M50,10L86,30V70L50,90L14,70V30Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M14,30L50,50L86,30" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M50,50V90" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Cube</text>
+    </g>
+    <g id="icon-lightbulb" transform="translate(812,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M36,66C36,56 22,50 22,34C22,18 34,8 50,8C66,8 78,18 78,34C78,50 64,56 64,66Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M38,78H62" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M43,90H57" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Lightbulb</text>
+    </g>
+    <g id="icon-box" transform="translate(944,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M14,18H86Q90,18 90,22V32Q90,36 86,36H14Q10,36 10,32V22Q10,18 14,18Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M16,36V82Q16,88 22,88H78Q84,88 84,82V36" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M40,54H60" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Box</text>
+    </g>
+    <g id="icon-chip" transform="translate(1076,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M30,24H70Q76,24 76,30V70Q76,76 70,76H30Q24,76 24,70V30Q24,24 30,24Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M42,40H58Q60,40 60,42V58Q60,60 58,60H42Q40,60 40,58V42Q40,40 42,40Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M40,24V10" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M60,24V10" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M40,76V90" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M60,76V90" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M24,40H10" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M24,60H10" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M76,40H90" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M76,60H90" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Chip</text>
+    </g>
+    <g id="icon-target" transform="translate(1208,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <circle cx="50" cy="50" r="38" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="50" cy="50" r="21" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="50" cy="50" r="7" style="fill:black;stroke:none;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Target</text>
+    </g>
+    <g id="icon-rocket" transform="translate(1340,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M50,8C66,20 72,40 66,66H34C28,40 34,20 50,8Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="50" cy="36" r="8" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M33,50L18,66V80L35,70" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M67,50L82,66V80L65,70" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M43,76L50,92L57,76" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Rocket</text>
+    </g>
+    <g id="icon-sparkle" transform="translate(1472,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M50,8C54,36 64,46 92,50C64,54 54,64 50,92C46,64 36,54 8,50C36,46 46,36 50,8Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Sparkle</text>
+    </g>
+    <g id="icon-eye" transform="translate(1604,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M8,50C22,28 36,20 50,20C64,20 78,28 92,50C78,72 64,80 50,80C36,80 22,72 8,50Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="50" cy="50" r="12" style="fill:black;stroke:none;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Eye</text>
+    </g>
+    <g id="icon-kanban" transform="translate(1736,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M20,10H80Q90,10 90,20V80Q90,90 80,90H20Q10,90 10,80V20Q10,10 20,10Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M31,32V66" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M50,32V50" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M69,32V72" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Kanban</text>
+    </g>
+    <g id="icon-briefcase" transform="translate(1868,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M17,30H83Q90,30 90,37V79Q90,86 83,86H17Q10,86 10,79V37Q10,30 17,30Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M36,30V20Q36,14 42,14H58Q64,14 64,20V30" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M10,54H90" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Briefcase</text>
+    </g>
+    <g id="icon-scales" transform="translate(2000,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M50,12V86" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M30,88H70" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M16,24H84" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M16,24L6,56M16,24L26,56" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M84,24L74,56M84,24L94,56" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M4,58H28C28,66 23,70 16,70C9,70 4,66 4,58Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M72,58H96C96,66 91,70 84,70C77,70 72,66 72,58Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Scales</text>
+    </g>
+    <g id="icon-image" transform="translate(2132,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M18,14H82Q90,14 90,22V78Q90,86 82,86H18Q10,86 10,78V22Q10,14 18,14Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="34" cy="36" r="7" style="fill:black;stroke:none;"/>
+            <path d="M12,76L38,52L54,66L68,52L88,72" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Image</text>
+    </g>
+    <g id="icon-grid" transform="translate(2264,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M17,12H38Q43,12 43,17V38Q43,43 38,43H17Q12,43 12,38V17Q12,12 17,12Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M62,12H83Q88,12 88,17V38Q88,43 83,43H62Q57,43 57,38V17Q57,12 62,12Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M17,57H38Q43,57 43,62V83Q43,88 38,88H17Q12,88 12,83V62Q12,57 17,57Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M62,57H83Q88,57 88,62V83Q88,88 83,88H62Q57,88 57,83V62Q57,57 62,57Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Grid</text>
+    </g>
+    <g id="icon-check" transform="translate(2396,450)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <circle cx="50" cy="50" r="38" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M31,51L45,65L70,38" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Check</text>
+    </g>
+    <g id="icon-stairs" transform="translate(20,600)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M10,88V68H32V48H54V28H76V10H90V88Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Stairs</text>
+    </g>
+    <g id="icon-playlist" transform="translate(152,600)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M10,22H58" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M10,42H58" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M10,62H48" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M78,24V72" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M78,20L90,28" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="68" cy="74" r="11" style="fill:black;stroke:none;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Playlist</text>
+    </g>
+    <g id="icon-newspaper" transform="translate(284,600)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M76,86H20Q12,86 12,78V16H76V78Q76,86 84,86Q90,86 90,78V34H76" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M26,28H62Q64,28 64,30V42Q64,44 62,44H26Q24,44 24,42V30Q24,28 26,28Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M24,58H64" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M24,72H64" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Newspaper</text>
+    </g>
+    <g id="icon-shield" transform="translate(416,600)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M50,8L84,20V46C84,68 70,82 50,92C30,82 16,68 16,46V20Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Shield</text>
+    </g>
+    <g id="icon-gem" transform="translate(548,600)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M30,16H70L90,38L50,88L10,38Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M10,38H90" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M40,16L30,38L50,88L70,38L60,16" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Gem</text>
+    </g>
+    <g id="icon-drop" transform="translate(680,600)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M50,8C62,28 78,44 78,62C78,78 66,90 50,90C34,90 22,78 22,62C22,44 38,28 50,8Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M36,64C36,72 40,77 47,79" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Drop</text>
+    </g>
+    <g id="icon-browser" transform="translate(812,600)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M18,14H82Q90,14 90,22V78Q90,86 82,86H18Q10,86 10,78V22Q10,14 18,14Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M10,36H90" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="23" cy="25" r="4" style="fill:black;stroke:none;"/>
+            <circle cx="35" cy="25" r="4" style="fill:black;stroke:none;"/>
+            <circle cx="47" cy="25" r="4" style="fill:black;stroke:none;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Browser</text>
+    </g>
+    <g id="icon-phone" transform="translate(944,600)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M36,8H64Q74,8 74,18V82Q74,92 64,92H36Q26,92 26,82V18Q26,8 36,8Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M44,22H56" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <circle cx="50" cy="77" r="5" style="fill:black;stroke:none;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Phone</text>
+    </g>
+    <g id="icon-link" transform="translate(1076,600)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M46,38L56,28C64,20 76,20 84,28C92,36 92,48 84,56L72,68" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M54,62L44,72C36,80 24,80 16,72C8,64 8,52 16,44L28,32" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M40,60L60,40" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Link</text>
+    </g>
+    <g id="icon-magnet" transform="translate(1208,600)">
+        <g transform="matrix(0.84,0,0,0.84,8,8)">
+            <path d="M18,14V50C18,70 32,84 50,84C68,84 82,70 82,50V14H62V50C62,58 57,64 50,64C43,64 38,58 38,50V14Z" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M18,30H38" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+            <path d="M62,30H82" style="fill:none;stroke:black;stroke-width:9.92px;"/>
+        </g>
+        <text x="22px" y="122px" style="font-family:'Bungalow-Sans', 'Bungalow Sans Bolder';font-weight:800;font-size:14px;">Magnet</text>
+    </g>
 </svg>
