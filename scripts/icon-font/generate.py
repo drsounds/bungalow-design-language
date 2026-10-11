@@ -460,7 +460,17 @@ def build_font(icons):
     fb.setupGlyf({".notdef": notdef_pen.glyph(), **glyphs})
     fb.setupHorizontalMetrics({".notdef": (0, 0), **metrics})
     fb.setupHorizontalHeader(ascent=UPEM - 100, descent=-100)
-    fb.setupNameTable({"familyName": FONT_FAMILY, "styleName": "Regular"})
+    fb.setupNameTable(
+        {
+            "familyName": FONT_FAMILY,
+            "styleName": "Regular",
+            # Full and PostScript names too: Java's Font.createFont (the
+            # bungalow desktop app) refuses a font without them.
+            "fullName": FONT_FAMILY,
+            "psName": FONT_FAMILY.replace(" ", "") + "-Regular",
+            "uniqueFontIdentifier": FONT_FAMILY.replace(" ", "") + "-Regular",
+        }
+    )
     fb.setupOS2(sTypoAscender=UPEM - 100, sTypoDescender=-100, usWinAscent=UPEM, usWinDescent=100)
     fb.setupPost()
 
